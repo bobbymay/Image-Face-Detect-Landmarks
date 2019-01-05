@@ -5,7 +5,7 @@ import Vision
 class ViewController: UIViewController {
 	
 	// Layer to hold Vision results.
-	private 	lazy var pathLayer = CALayer()
+	private lazy var pathLayer = CALayer()
 	
 	// Face overlay, all visual landmarks are relative to the face bounds. All points will be on this view
 	private var face: UIView!
