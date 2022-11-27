@@ -39,6 +39,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1D879AB42933B97300B007F3 /* VIews */ = {
+			isa = PBXGroup;
+			children = (
+				E6188B35218DA0A500FF0067 /* LaunchScreen.storyboard */,
+				E6188B30218DA0A300FF0067 /* Main.storyboard */,
+			);
+			path = VIews;
+			sourceTree = "<group>";
+		};
+		1D879AB52933BA2400B007F3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E6946A6121A2362900016820 /* Nose.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1D879AB62933BA4800B007F3 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				E6C7306B2199FE5200A0613A /* Extensions.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		1D879AB72933BA5600B007F3 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E6188B2E218DA0A300FF0067 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		E6188B20218DA0A300FF0067 = {
 			isa = PBXGroup;
 			children = (
@@ -59,12 +92,11 @@
 			isa = PBXGroup;
 			children = (
 				E6188B2C218DA0A300FF0067 /* AppDelegate.swift */,
-				E6188B2E218DA0A300FF0067 /* ViewController.swift */,
-				E6946A6121A2362900016820 /* Nose.swift */,
-				E6C7306B2199FE5200A0613A /* Extensions.swift */,
-				E6188B30218DA0A300FF0067 /* Main.storyboard */,
+				1D879AB52933BA2400B007F3 /* Model */,
+				1D879AB72933BA5600B007F3 /* Controller */,
+				1D879AB62933BA4800B007F3 /* Helpers */,
+				1D879AB42933B97300B007F3 /* VIews */,
 				E6188B33218DA0A500FF0067 /* Assets.xcassets */,
-				E6188B35218DA0A500FF0067 /* LaunchScreen.storyboard */,
 				E6188B38218DA0A500FF0067 /* Info.plist */,
 			);
 			path = FaceRecognition;
@@ -97,11 +129,12 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1010;
-				LastUpgradeCheck = 1010;
+				LastUpgradeCheck = 1410;
 				ORGANIZATIONNAME = "Digital Bananas, LLC.";
 				TargetAttributes = {
 					E6188B28218DA0A300FF0067 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = "";
 					};
 				};
 			};
@@ -196,6 +229,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -221,7 +255,6 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -257,6 +290,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -276,7 +310,6 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -299,7 +332,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.FaceRecognition;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -317,7 +350,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.FaceRecognition;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
